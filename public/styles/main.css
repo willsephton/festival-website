@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@media screen{
+
+/* General Styles */
+body{
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+ }
+
+p{
+    color: black;
+    font-family: 'Trebuchet MS';
+}
+
+.content{
+    margin: auto;
+    width: 40%;
+    /*border: 5px solid #FFFF00;*/
+    margin-top: 40px;
+    text-align: center;
+
+
+}
+
+.title{
+    font-size: 60px;
+    margin-top: -5px;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+}
+
+
+#underline{
+    text-decoration: underline;
+}
+
+/* Nav Styles */
+
+nav{
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    background-color: rgb(3, 22, 3);
+
+}
+
+#navlogo{
+    height: 60px;
+    width: 300px;
+}
+
+.navbar li{
+    font-size: 30px;
+    font-family: 'Kanit', sans-serif;
+    display: inline-block;
+    padding: 0px 20px;
+    color: white;
+
+}
+
+.navbar a{
+    color: white;
+}
+
+.navbar a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: white;
+}
+
+#contactButton{
+    background: green;
+    border: 0px;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    padding: 12px 48px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+/* Cookie Banner Styles */
+
+#cookieBanner{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: darkgreen;
+    color: white;
+    padding: 10px 32px;
+}
+
+#closeCookies{
+    background: rgb(63, 192, 63);
+    border: 0px;
+    color: white;
+    font-size: 18px;
+    padding: 12px 48px;
+    border-radius: 8px;
+    cursor: pointer;
+    float: right;
+}
+
+/* Home Page */
+
+#mainLogo{
+    border: 6px solid white;
+}
+
+#festdate{
+    font-size: 60px;
+    margin-top: -5px;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+}
+
+.leftImage{
+    float:left; 
+    width:25%;
+    height:750px;
+    padding-left: 35px;
+}
+
+.imgBorderSizes{
+    height: 750px;
+    width: 500px;
+    border: 6px solid white;
+}
+
+.rightImage{
+    float:right;
+    width:25%;
+    height:750px;
+    padding-right: 75px;
+
+}
+
+/* FAQ Styles */
+
+.question{
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    margin-top: -5px;
+}
+
+.question h3{
+    font-size: 30px;
+}
+
+.question h4{
+    font-size: 20px;
+}
+
+
+.tablerow{
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    margin-top: -5px;
+    font-size: 30px;
+}
+
+#lineup{
+    float: left;
+    text-align: left;
+}
+
+
+/* Contact Us Page */
+
+#contactus_header{
+    font-size: 30px;
+    margin-top: -5px;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    /*border: 5px solid #FFFF00; */
+}
+
+#contactText{
+    height: 25px;
+    width: 100px;
+    margin-bottom: 5px;
+}
+
+#contactDesc{
+    height: 300px;
+    width: 500px;
+}
+
+.contactSpacing{
+    text-align: left;
+    display: block;
+}
+
+.contactus{
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    margin-top: -5px;
+    font-size: 30px;
+}
+
+/* Game Styles */
+
+#gameWrapper{
+    position: relative;
+}
+
+.gameImages{
+    width: 600px;
+    height: 600px;
+    position: relative;
+}
+
+#gameImage{
+    position: absolute;
+    left:73px;
+    top:0px;
+}
+
+#question{
+    font-size: 60px;
+    margin-top: -5px;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+}
+
+#submitGame{
+    font-family: 'Kanit', sans-serif;
+}
+
+}
+
+/* Media for smaller screens */
+
+@media screen and (max-width: 1600px) {
+    .leftImage {
+      display: none;
+    }
+    .rightImage {
+        display: none;
+      }
+  }

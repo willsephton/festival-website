@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> <%= title %> </title>
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+
+    <body>
+        <%- include("particles/nav.ejs") %>
+        <div class="threeDivs">
+            <div class="leftImage"><img class="imgBorderSizes" alt="" src="images/picture6.png"></div>
+            <div class="rightImage"><img class="imgBorderSizes" alt="" src="images/picture5.png"></div>
+            <div class="content">
+                <div id="gameWrapper">
+                <img class="gameImages" id="otherImage" alt="Game Image" src="images/guitar.png">
+                <img class="gameImages" id="gameImage" alt="Game Image" src="images/guitar_blur.png">
+                </div>
+                <h1 id="question">What instrument is this?</h1>
+                <input name="guess" id="gameGuess">
+                <button id="submitGame">Submit</button>
+            </div>
+        </div>
+        <script src="scripts/game.js"></script>
+    </body>
+
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> <%= title %> </title>
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+
+    <body>
+        <%- include("particles/nav.ejs") %>
+        <div class="threeDivs">
+        <div class="leftImage"><img class="imgBorderSizes" alt="" src="images/picture9.png"></div>
+        <div class="rightImage"><img class="imgBorderSizes" alt="" src="images/picture10.png"></div>
+        <div class="content">
+            <h1 class="title" id="underline">The offical lineup for "The BIG Festival"</h1>
+            <% lineup.forEach(row=>{ %>
+                <div id="lineup">
+                    <ul class="tablerow">
+                        <li>Artist <%= row.artistID %> Name: <%= row.artistName %></li>
+                        <li>Genre: <%= row.genre %></li>
+                        <li>Stage they will be perfoming on: <%= row.stage %></li>
+                        <li>Artist Website: <%= row.website %></li>
+                    </ul>
+                </div>
+            <% }); %>
+        </div>
+        </div>
+
+    
+    </body>
+
+
+</html>
